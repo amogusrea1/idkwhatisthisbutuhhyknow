@@ -2,7 +2,7 @@
 clear
 echo ---OS on Google Colab---
 PS3='sir you need to choose: '
-options=("Vista rdp" "Windows8 rdp, pass is unknown:die:" "Windows 2012 R2 Datacenter with Aero Glass (Activated)" "ubuntu precise64" "quit")
+options=("Vista rdp" "Windows8 rdp, pass is unknown:die:" "Windows 2012 R2 Datacenter with Aero Glass (Activated)" "arch" "quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -69,7 +69,7 @@ do
         echo Script by wawalol
         sudo qemu-system-x86_64 -vnc :0 -hda lite7.qcow2  -smp cores=2  -m 8192M -machine usb=on -device usb-tablet > /dev/null 2>&1
         ;;
-        "ubuntu precise64")
+        "arch")
         echo "wait"
         wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
         unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
@@ -81,7 +81,7 @@ do
         echo "Installing QEMU (2-3m)..."
         sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
         echo Downloading Ubuntu Disk...
-        curl -L -o lite7.qcow2 https://app.vagrantup.com/failfish/boxes/precise64/versions/1.0.0/providers/qemu.box
+        curl -L -o lite7.qcow2 https://app.vagrantup.com/j8j8/boxes/archlinux/versions/2019.01.01/providers/qemu.box
         echo "OS On Google Colab"
         echo Your VNC IP Address:
         curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
