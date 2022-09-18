@@ -19,7 +19,7 @@ do
             sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
             echo Downloading Windows Disk...
             curl -L -o lite7.qcow2 https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.1.1/providers/vista.box
-            echo "Windows Vista On Google Colab"
+            echo "OS On Google Colab"
             echo Your VNC IP Address:
             curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
             echo "Note: Use Right-Click Or Ctrl+C To Copy"
@@ -40,7 +40,7 @@ do
         sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
         echo Downloading Windows Disk...
         curl -L -o lite7.qcow2 https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.1.1/providers/win8.box
-        echo "Windows 8 On Google Colab"
+        echo "OS On Google Colab"
         echo Your VNC IP Address:
         curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
         echo "Note: Use Right-Click Or Ctrl+C To Copy"
@@ -61,7 +61,7 @@ do
         sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
         echo Downloading Windows Disk...
         curl -L -o lite7.qcow2 https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.0.1/providers/qemu.box
-        echo "Windows 8 On Google Colab"
+        echo "OS On Google Colab"
         echo Your VNC IP Address:
         curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
         echo "Note: Use Right-Click Or Ctrl+C To Copy"
@@ -82,7 +82,7 @@ do
         sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
         echo Downloading Ubuntu Disk...
         curl -L -o lite7.qcow2 https://app.vagrantup.com/failfish/boxes/precise64/versions/1.0.0/providers/qemu.box
-        echo "Windows 8 On Google Colab"
+        echo "OS On Google Colab"
         echo Your VNC IP Address:
         curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
         echo "Note: Use Right-Click Or Ctrl+C To Copy"
