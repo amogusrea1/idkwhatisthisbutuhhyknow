@@ -102,7 +102,7 @@ do
         echo "Installing QEMU (2-3m)..."
         sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
         echo Downloading Disk...
-        curl -L -o linu.qcow2 https://mirror.yandex.ru/ubuntu-releases/14.04/ubuntu-14.04.6-server-i386.iso
+        curl -L -o linu.qcow2 https://mirror.yandex.ru/ubuntu-releases/14.04/ubuntu-14.04.6-desktop-amd64.iso
         echo "OS On Google Colab"
         echo Your VNC IP Address:
         curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
